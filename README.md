@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="doc/logo.png" alt="GAPrune Logo" width="800">
+  <img src="https://github.com/yixuantt/picx-images-hosting/raw/master/logo.7lkco20x1m.webp" alt="GAPrune Logo" width="800">
   
   # GAPrune: Gradient-Alignment Pruning for Domain-Aware Embeddings
   
