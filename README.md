@@ -6,6 +6,7 @@
   [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
   [![PyTorch](https://img.shields.io/badge/PyTorch-1.9+-red.svg)](https://pytorch.org/)
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+  [![arXiv](https://img.shields.io/badge/arXiv-2509.10844-b31b1b.svg)](https://arxiv.org/abs/2509.10844)
 </div>
 
 
@@ -151,7 +152,15 @@ Available layer types:
 If you use GAPrune in your research, please cite our paper:
 
 ```bibtex
-
+@misc{tang2025gaprunegradientalignmentpruningdomainaware,
+      title={GAPrune: Gradient-Alignment Pruning for Domain-Aware Embeddings}, 
+      author={Yixuan Tang and Yi Yang},
+      year={2025},
+      eprint={2509.10844},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2509.10844}, 
+}
 ```
 
 ## 📄 License
