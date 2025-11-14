@@ -365,7 +365,7 @@ class QwenSparseModel:
         unstructured_pct: float = 0.0,
         unstructured_scoring: str = 'dai',
         # allocation & postproc options
-        layer_budget_strategy: str = 'global',
+        layer_budget_strategy: str = 'uniform',
         score_postproc: str = 'zscore_sigmoid',
         score_temperature: float = 1.0,
         fusion_alpha: float = 0.0,
@@ -962,10 +962,10 @@ def excute_sparse_model(model_name_or_path: str,
                              sparsify_layers: List[str] = None,
                              unstructured_pct: float = 0.0,
                              unstructured_scoring: str = 'dai',
-                             general_fisher_scores: str = None,
-                             domain_fisher_scores: str = None,
-                             alignment_scores: str = None,
-                             layer_budget_strategy: str = 'global',
+                            general_fisher_scores: str = None,
+                            domain_fisher_scores: str = None,
+                            alignment_scores: str = None,
+                            layer_budget_strategy: str = 'uniform',
                              score_postproc: str = 'zscore_sigmoid',
                              score_temperature: float = 1.0,
                              fusion_alpha: float = 0.0,
@@ -1076,7 +1076,7 @@ def main():
     parser.add_argument('--batch_size', type=int, default=4, help="Batch size for evaluation")
     parser.add_argument('--show_layer_types', action='store_true',
                        help="Show available layer types and exit")
-    parser.add_argument('--layer_budget_strategy', type=str, default='global',
+    parser.add_argument('--layer_budget_strategy', type=str, default='uniform',
                         choices=['global', 'uniform'],
                         help='Global top-k across all params, or per-layer allocation strategy')
     parser.add_argument('--score_postproc', type=str, default='none',

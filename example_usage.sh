@@ -43,6 +43,7 @@ python gaprune/model/SparseModel.py \
   --sparsify_layers mlp \
   --unstructured_pct 0.5 \
   --unstructured_scoring dai \
-  --alignment_scores output/gradient/Qwen3-Embedding-4B/alignment_scores_Qwen3-Embedding-4B_20250914_001132.json \
-  --domain_fisher_scores output/fisher/chem-example_fisher_complete_scores_20250913_235811.json \
-  --general_fisher_scores output/fisher/general-example-output_fisher_complete_scores_20250913_235418.json
+  --layer_budget_strategy uniform \
+  --alignment_scores output/gradient/Qwen3-Embedding-4B/alignment_scores_Qwen3-Embedding-4B_timestamp.json \
+  --domain_fisher_scores output/fisher/chem-example_fisher_complete_scores_timestamp.json \
+  --general_fisher_scores output/fisher/general-example-output_fisher_complete_scores_timestamp.json
